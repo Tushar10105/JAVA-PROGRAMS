@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 class BankAccount{
-	String AccountHolder;
-	double Balance;
+	private String AccountHolder;
+	private double Balance;
 
 	BankAccount(String AccountHolder,double Balance){
 		this.AccountHolder=AccountHolder;
@@ -24,7 +24,7 @@ class BankAccount{
 					public void Deposit(double amount){
 						if(amount>0){
 							Balance+=amount;
-							System.out.println("YOU ARE DIPOSITED: "+amount);
+							System.out.println("YOU HAVE DIPOSITED: "+amount);
 							}else{
 								System.out.println("INVALID AMOUNT DIPOSITED");
 								}
@@ -35,7 +35,7 @@ class BankAccount{
 								Balance-=amount;
 								System.out.println("WITHDRAW: "+amount);
 								}else{
-									System.out.print("INSUFFICIENT or INVALID AMMOUNT");
+									System.out.print("INSUFFICIENT or INVALID AMOUNT");
 									}
 							}
 
